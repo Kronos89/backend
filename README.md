@@ -25,6 +25,7 @@
 ## Description
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+Musala Gateway test for Reynier Vega
 
 ## Installation
 
@@ -43,6 +44,47 @@ $ npm run start:dev
 
 # production mode
 $ npm run start:prod
+```
+API Endpoints
+Create Gateway
+
+    POST /gateway: Create a new gateway.
+
+Show all Gateways
+
+    GET /gateway: Get a list of all gateways.
+
+Show one Gateway
+
+    GET /gateway/{serial}: Get a gateway by serial.
+
+Update Gateway
+
+    PUT /gateway/{serial}: Update a gateway by serail.
+
+Delete Gateway
+
+    DELETE /gateway/{serial}: Delete a gateway by serail.
+    
+## API JSON EXAMPLE
+```json
+{
+        "name": "ASD",
+        "serialNumber": "ABCDE",
+        "ipAddress": "6.6.6.6",
+        "peripherals": [
+            {
+                "uid": "9",
+                "vendor": "hp",
+                "status": "online"
+            },
+            {
+                "uid": "a",
+                "vendor": "s",
+                "status": "offline"
+            }
+        ]
+    }
 ```
 
 ## Test
@@ -64,9 +106,7 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 
 ## Stay in touch
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+- Author - Reynier Vega
 
 ## License
 
